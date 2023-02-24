@@ -1,35 +1,47 @@
 html {
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
 
-a{
-    all: unset;
+a {
+  all: unset;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .booki-activities {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 50px;
+  margin: 20px 50px 70px 30px;
 }
 
 .booki-activities-nav {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.booki-activities-nav p:hover{
-    cursor: pointer;
-    border-top: solid 2px #0065fc;
-    padding-top: 10px;
-    color: #0065fc;
-}
-
-.booki-activities ul {
   display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
+.booki-activities-nav p:hover {
+  cursor: pointer;
+  border-top: solid 2px #0065fc;
+  color: #0065fc;
+  padding-top: 10px;
+}
+
+.slogan-nav {
+    margin: 0 0 40px 50px;
+}
+
+.input-field{
+    display: flex;
+    margin-left: 50px;
+}
 
 #booki-logo {
   height: 30px;
@@ -37,7 +49,7 @@ a{
 }
 
 #hébergement {
-    margin-right: 100px;
+  margin-right: 100px;
 }
 
 /* ----------------Media Queries ------------------ */
