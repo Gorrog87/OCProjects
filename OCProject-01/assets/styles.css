@@ -1,14 +1,51 @@
+html {
+  font-family: 'Raleway';
+}
+
+a{
+    all: unset;
+}
+
+.booki-activities {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+.booki-activities-nav {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.booki-activities-nav p:hover{
+    cursor: pointer;
+    border-top: solid 2px #0065fc;
+    padding-top: 10px;
+    color: #0065fc;
+}
+
+.booki-activities ul {
+  display: flex;
+}
 
 
+#booki-logo {
+  height: 30px;
+  width: 100px;
+}
+
+#hébergement {
+    margin-right: 100px;
+}
 
 /* ----------------Media Queries ------------------ */
 
 /* Media query for tablets */
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 }
 
 /* Media query for mobiles */
-@media only screen and (max-width: 768px){
-
+@media only screen and (max-width: 768px) {
 }
