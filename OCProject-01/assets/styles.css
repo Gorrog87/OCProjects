@@ -1,0 +1,14 @@
+
+
+
+/* ----------------Media Queries ------------------ */
+
+/* Media query for tablets */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    
+}
+
+/* Media query for mobiles */
+@media only screen and (max-width: 768px){
+
+}
