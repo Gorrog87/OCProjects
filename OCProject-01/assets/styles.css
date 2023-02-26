@@ -37,6 +37,11 @@ button {
   align-items: center;
 }
 
+.flex-between{
+  display: flex;
+  
+}
+
 .bold {
   font-weight: bold;
 }
@@ -49,11 +54,11 @@ button {
   font-style: italic;
 }
 
-.blue-star {
+.blue {
   color: #0165fb;
 }
 
-.grey-star {
+.grey {
   color: #f2f2f2;
 }
 
@@ -155,25 +160,46 @@ button {
 
 .rentings {
   background: #d9d9d9;
-  padding: 3% 2% 3% 2%;
+  padding: 3% 1% 3% 1%;
   border-radius: 20px;
+  width: 817px;
 }
 
-/* .rentings i {
-  color: #0165fc;
-} */
+.rentings a {
+  margin: 1%;
+}
 
 .renting-card {
   border: 5px solid #ffffff;
   border-radius: 20px;
   background: white;
+  margin: 1%;
+  width: 246px;
+  height: 240px;
+  box-shadow: 8px 14px 3px -14px #000000;
 }
 
-.renting-card > img {
-  max-width: 246px;
+.renting-row {
+  margin-bottom: 4%;
+}
+
+.renting-card img {
+  width: 246px;
   max-height: 124px;
   border-radius: 20px 20px 0 0;
 }
+
+.renting-card p {
+  margin-left: 5%;
+}
+
+.renting-card-stars {
+  margin: 20px 0 0 10px;
+}
+
+.rentings-popular {
+}
+
 /*  ----------  ID section  ----------------------- */
 
 #booki-logo {
