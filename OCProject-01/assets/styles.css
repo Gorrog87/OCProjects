@@ -11,6 +11,7 @@ html {
 
 a {
   all: unset;
+  cursor: pointer;
 }
 
 input {
@@ -24,10 +25,17 @@ button {
   all: unset;
 }
 
-i {
+/* -------------------- Classes section ----------------- */
+
+.flex {
+  display: flex;
 }
 
-/* -------------------- Classes section ----------------- */
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .bold {
   font-weight: bold;
@@ -41,8 +49,12 @@ i {
   font-style: italic;
 }
 
-.flex {
-  display: flex;
+.blue-star {
+  color: #0165fb;
+}
+
+.grey-star {
+  color: #f2f2f2;
 }
 
 .btn-primary {
@@ -75,7 +87,7 @@ i {
 }
 
 .slogan-nav {
-  margin: 0 0 40px 0;
+  margin: 0 0 5% 0;
 }
 
 .map-marker {
@@ -91,7 +103,7 @@ i {
 
 .filters {
   display: flex;
-  margin: 2% 0 0 0;
+  margin: 5% 0 5% 0;
   font-weight: bold;
 }
 
@@ -103,6 +115,7 @@ i {
 .filter-info {
   display: flex;
   align-items: center;
+  margin-bottom: 5%;
 }
 
 /* ici je n'arrive toujours pas à placer correctement la bordure pour qu'elle puisse encercler correctement le contenu */
@@ -127,7 +140,7 @@ i {
 }
 
 .info-logo {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   padding: 1px;
   display: flex;
   height: 15px;
@@ -140,6 +153,27 @@ i {
   font-weight: 600;
 }
 
+.rentings {
+  background: #d9d9d9;
+  padding: 3% 2% 3% 2%;
+  border-radius: 20px;
+}
+
+/* .rentings i {
+  color: #0165fc;
+} */
+
+.renting-card {
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  background: white;
+}
+
+.renting-card > img {
+  max-width: 246px;
+  max-height: 124px;
+  border-radius: 20px 20px 0 0;
+}
 /*  ----------  ID section  ----------------------- */
 
 #booki-logo {
