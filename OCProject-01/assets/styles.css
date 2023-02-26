@@ -1,24 +1,64 @@
+/* All html tags are at the beggining */
+/* css classes are coming after */
+/* Id's are after the classes */
+/* at the end the media queries */
+
+/* --------------------- HTML section ------------- */
 html {
   font-family: "Raleway";
+  margin: 1% 5% 0 5%;
 }
 
 a {
   all: unset;
 }
 
+input {
+  all: unset;
+  border: 1px solid #f2f2f2;
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  all: unset;
+}
+
+i {
+}
+
+/* -------------------- Classes section ----------------- */
+
 .bold {
   font-weight: bold;
+}
+
+.thin {
+  font-weight: 200;
 }
 
 .italic {
   font-style: italic;
 }
 
+.flex {
+  display: flex;
+}
+
+.btn-primary {
+  color: #ffff;
+  background: #0165fc;
+  padding: 0 10px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .booki-activities {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 50px 70px 30px;
+  margin: 20px 50px 70px 0;
 }
 
 .booki-activities-nav {
@@ -35,13 +75,72 @@ a {
 }
 
 .slogan-nav {
-    margin: 0 0 40px 50px;
+  margin: 0 0 40px 0;
 }
 
-.input-field{
-    display: flex;
-    margin-left: 50px;
+.map-marker {
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  width: 50px;
+  height: 49px;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.filters {
+  display: flex;
+  margin: 2% 0 0 0;
+  font-weight: bold;
+}
+
+.filters i {
+  color: #0165fc;
+  margin-left: 5%;
+}
+
+.filter-info {
+  display: flex;
+  align-items: center;
+}
+
+/* ici je n'arrive toujours pas à placer correctement la bordure pour qu'elle puisse encercler correctement le contenu */
+
+.duo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 3%;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  width: 226px;
+}
+
+.duo-icon:hover {
+  background: #ddebff;
+  cursor: pointer;
+}
+
+.duo-icon p {
+  margin-left: 5%;
+}
+
+.info-logo {
+  border: 1px solid #D9D9D9;
+  padding: 1px;
+  display: flex;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: #0165fc;
+  font-weight: 600;
+}
+
+/*  ----------  ID section  ----------------------- */
 
 #booki-logo {
   height: 30px;
@@ -50,6 +149,11 @@ a {
 
 #hébergement {
   margin-right: 100px;
+}
+
+#familial-btn {
+  height: 22px;
+  width: 13, 44px;
 }
 
 /* ----------------Media Queries ------------------ */
