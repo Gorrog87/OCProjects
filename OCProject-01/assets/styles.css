@@ -10,16 +10,19 @@ html {
   margin: 2em 2em 0 3em;
 }
 
-body{
+body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
 }
 
-
 a {
   all: unset;
   cursor: pointer;
+}
+
+form {
+  margin-bottom: 2em;
 }
 
 input {
@@ -31,6 +34,15 @@ input {
 
 button {
   all: unset;
+}
+
+ul {
+  all: unset;
+}
+
+li {
+  all: unset;
+  margin-left: 5px;
 }
 
 footer {
@@ -119,7 +131,7 @@ footer {
 .top-effect:hover {
   border-top: 1px solid blue;
 }
-   
+
 .slogan-nav {
   margin: 0 0 5% 0;
 }
@@ -139,11 +151,6 @@ footer {
   align-items: center;
 }
 
-.filters {
-  display: flex;
-  margin: 5% 0 5% 0;
-  font-weight: bold;
-}
 
 .filters i {
   color: #0165fc;
@@ -153,29 +160,25 @@ footer {
 .filter-info {
   display: flex;
   align-items: center;
-  margin-bottom: 5%;
+  margin: 5% 0 5% 0;
 }
 
-/* ici je n'arrive toujours pas à placer correctement la bordure pour qu'elle puisse encercler correctement le contenu */
+.filter-list {
+  gap: 7em;
+  margin-top: 1em;
+}
 
-.duo-icon {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-left: 3%;
-  border: 2px solid #d9d9d9;
+.filter {
+  border: 1px solid #D9D9D9;
+  padding: 15px;
   border-radius: 25px;
-  width: 226px;
+  gap: 5px;
 }
 
-.duo-icon:hover {
-  background: #ddebff;
+.filter:hover{
+  background: #DEEAFF;
   cursor: pointer;
-}
-
-.duo-icon p {
-  margin-left: 5%;
-}
+} 
 
 .info-logo {
   border: 1px solid #d9d9d9;
@@ -192,13 +195,13 @@ footer {
 }
 
 .rentings {
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 3% 1% 3% 1%;
   border-radius: 20px;
   width: 817px;
 }
 
-.rentings-and-popular{
+.rentings-and-popular {
   justify-content: space-around;
   margin-bottom: 5%;
 }
@@ -237,7 +240,7 @@ footer {
 }
 
 .popular-rentings {
-  background: #F2F2F2;
+  background: #f2f2f2;
   padding: 3% 1% 3% 1%;
   border-radius: 20px;
 }
@@ -260,22 +263,22 @@ footer {
   border-radius: 20px 0px 0px 20px;
 }
 
-.popular-card-stars{
+.popular-card-stars {
   margin: 20px 0 0 0px;
 }
 
-.activity-cards{
+.activity-cards {
   display: flex;
   border-radius: 20px;
 }
 
-.activity-card{
+.activity-card {
   box-shadow: 10px 10px 12px -19px #000000;
   border-radius: 20px;
   margin: 0 1% 1% 1%;
 }
 
-.activity-card img{
+.activity-card img {
   min-width: 302px;
   max-width: 302px;
   height: 365px;
@@ -284,7 +287,7 @@ footer {
   object-fit: cover;
 }
 
-.activity-card p{
+.activity-card p {
   margin-left: 10%;
 }
 
@@ -307,33 +310,28 @@ footer {
   margin-top: 1px solid #0165fb;
 } */
 
-
 #familial-btn {
   height: 22px;
-  width: 13,44px;
+  width: 13, 44px;
 }
 
-#febrian-img{
+#febrian-img {
   height: 126px;
 }
 /* ----------------Media Queries ------------------ */
 
-
-@media only screen and(max-width: 1024px){
- 
+@media only screen and(max-width: 1024px) {
 }
 
 /* Media query for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
-  }
+}
 
-
-  /* Media query for mobiles
+/* Media query for mobiles
   @media only screen and (max-width: 768px) {
   } */
