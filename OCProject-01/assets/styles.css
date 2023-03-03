@@ -1,16 +1,21 @@
 /* All html tags are at the beggining */
 /* css classes are coming after */
 /* Id's are after the classes */
-/* at the end the media queries */
+/* and media queries at the end of the file */
 
 /* --------------------- HTML section ------------- */
+
 html {
   font-family: "Raleway";
+  margin: 2em 2em 0 3em;
 }
 
 body{
-  margin: 2em 2em 0 3em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
 }
+
 
 a {
   all: unset;
@@ -96,24 +101,31 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 50px 70px 0;
+  margin: 20px 150px 70px 0;
+  border-top: 1px solid #00000;
 }
 
 .booki-activities-nav {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  gap: 100px;
 }
 
-.booki-activities-nav p:hover {
-  cursor: pointer;
-  border-top: solid 2px #0065fc;
-  color: #0065fc;
-  padding-top: 10px;
+.top-effect {
+  border-top: 1px solid #00000;
 }
 
+.top-effect:hover {
+  border-top: 1px solid blue;
+}
+   
 .slogan-nav {
   margin: 0 0 5% 0;
+}
+
+.afficher-plus {
+  width: fit-content;
 }
 
 .map-marker {
@@ -202,7 +214,8 @@ footer {
   margin: 1%;
   width: 246px;
   height: 240px;
-  box-shadow: 8px 14px 14px -14px #000000;
+  /* box-shadow: 8px 14px 14px -14px #000000; */
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .renting-row {
@@ -234,7 +247,8 @@ footer {
   background: white;
   border-radius: 20px;
   margin-bottom: 15%;
-  box-shadow: 8px 14px 14px -14px #000000;
+  /* box-shadow: 8px 14px 14px -14px #000000; */
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .popular-card-details {
@@ -256,16 +270,16 @@ footer {
 }
 
 .activity-card{
-  box-shadow: 0px 10px 14px -13px #000000;
+  box-shadow: 10px 10px 12px -19px #000000;
   border-radius: 20px;
   margin: 0 1% 1% 1%;
-  
 }
 
 .activity-card img{
+  min-width: 302px;
   max-width: 302px;
   height: 365px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   margin-bottom: 1%;
   object-fit: cover;
 }
@@ -274,20 +288,29 @@ footer {
   margin-left: 10%;
 }
 
+.spacing-footer {
+  margin-left: 15em;
+}
 /*  ----------  ID section  ----------------------- */
 
 #booki-logo {
   height: 30px;
   width: 100px;
 }
-
-#hébergement {
+/* 
+#top-effect {
   margin-right: 100px;
 }
 
+#top-effect:hover {
+  margin-right: 100px;
+  margin-top: 1px solid #0165fb;
+} */
+
+
 #familial-btn {
   height: 22px;
-  width: 13, 44px;
+  width: 13,44px;
 }
 
 #febrian-img{
@@ -295,8 +318,13 @@ footer {
 }
 /* ----------------Media Queries ------------------ */
 
+
+@media only screen and(max-width: 1024px){
+ 
+}
+
 /* Media query for tablets */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
 }
 
