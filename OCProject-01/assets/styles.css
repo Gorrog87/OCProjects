@@ -6,7 +6,10 @@
 /* --------------------- HTML section ------------- */
 html {
   font-family: "Raleway";
-  margin: 1% 5% 0 5%;
+}
+
+body{
+  margin: 2em 2em 0 3em;
 }
 
 a {
@@ -25,6 +28,13 @@ button {
   all: unset;
 }
 
+footer {
+  margin-top: 5em;
+  padding: 0 0 2em 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 /* -------------------- Classes section ----------------- */
 
 .flex {
@@ -40,6 +50,12 @@ button {
 .flex-between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -61,6 +77,10 @@ button {
 
 .grey {
   color: #f2f2f2;
+}
+
+.bg-grey {
+  background: #f2f2f2;
 }
 
 .btn-primary {
@@ -277,8 +297,15 @@ button {
 
 /* Media query for tablets */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
 }
 
-/* Media query for mobiles */
-@media only screen and (max-width: 768px) {
-}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ... */
+  }
+
+
+  /* Media query for mobiles
+  @media only screen and (max-width: 768px) {
+  } */
