@@ -105,9 +105,10 @@ footer {
 .bg-grey {
   background: #f2f2f2;
 }
-.fas {
-  padding: 10px;
-}
+
+/* .fas{
+  display: none;
+} */
 
 .btn-primary {
   color: #ffff;
@@ -118,12 +119,27 @@ footer {
   font-weight: bold;
 }
 
+.btn-primary-mobile{
+  opacity: 0;
+  background: #0165fb;
+  padding: 1em;
+  color: #ffff;
+  border-radius: 12px;
+  z-index: 1;
+  position: absolute;
+  right: 64px;
+}
+
+.btn-primary-mobile .fas {
+  display: none;
+}
+
 .booki-activities {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 150px 70px 0;
-  border-top: 1px solid #00000;
+  border-top: 1px solid #0000;
 }
 
 .booki-activities-nav {
@@ -134,7 +150,7 @@ footer {
 }
 
 .top-effect {
-  border-top: 1px solid #00000;
+  border-top: 1px solid #0000;
 }
 
 .top-effect:hover {
@@ -339,6 +355,12 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media only screen and (max-width: 767.98px) {
+
+  .booki-logo-mobile{
+    display: flex;
+    justify-content: center;
+  }
+
   nav {
     display: unset;
     justify-content: unset;
@@ -350,7 +372,14 @@ footer {
     justify-content: space-between;
     cursor: pointer;
     gap: 100px;
-    border-bottom: 1px solid #00000;
+    border-bottom: 1px solid #0000;
+  }
+
+  .booki-activities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em 0 1em 0;
   }
 
   .top-effect {
@@ -362,11 +391,51 @@ footer {
   }
 
   .top-effect {
-    border-bottom: 1px solid #00000;
+    border-bottom: 1px solid #0000;
   }
   
   .top-effect:hover {
     border-bottom: 1px solid blue;
+  }
+
+  form{
+    margin-top: 3em;
+  }
+
+  .btn-primary{
+    opacity: 0;
+
+  }
+  button{
+  opacity: 0;
+  }
+
+  .fas {
+    padding: 16px;
+  }
+
+  input {
+    all: unset;
+    border: 1px solid #f2f2f2;
+    font-weight: bold;
+    color: black;
+    position: relative;
+  }
+
+  /* btn for mobile is ok but it's still moving everywhere, maybe a sticky position will fix it */
+  .btn-primary-mobile{
+    opacity: 1;
+    background: #0165fb;
+    padding: 1em;
+    color: #ffff;
+    border-radius: 12px;
+    z-index: 1;
+    position: absolute;
+    right: 64px;
+  }
+
+  .filter-list {
+    flex-wrap: wrap;
   }
 
 }
