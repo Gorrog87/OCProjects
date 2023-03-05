@@ -16,6 +16,12 @@ body {
   max-width: 1440px;
 }
 
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -98,6 +104,9 @@ footer {
 
 .bg-grey {
   background: #f2f2f2;
+}
+.fas {
+  padding: 10px;
 }
 
 .btn-primary {
@@ -299,6 +308,7 @@ footer {
 #booki-logo {
   height: 30px;
   width: 100px;
+  margin-top: 10px;
 }
 /* 
 #top-effect {
@@ -328,8 +338,37 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
+@media only screen and (max-width: 767.98px) {
+  nav {
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  .booki-activities-nav {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 100px;
+    border-bottom: 1px solid #00000;
+  }
+
+  .top-effect {
+    border-top: unset;
+  }
+  
+  .top-effect:hover {
+    border-top: unset
+  }
+
+  .top-effect {
+    border-bottom: 1px solid #00000;
+  }
+  
+  .top-effect:hover {
+    border-bottom: 1px solid blue;
+  }
+
 }
 
 /* Media query for mobiles
