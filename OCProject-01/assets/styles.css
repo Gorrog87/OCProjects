@@ -147,7 +147,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 150px 70px 0;
   border-top: 1px solid #0000;
 }
 
@@ -229,7 +228,7 @@ footer {
 
 .rentings {
   background: #f2f2f2;
-  padding: 3% 1% 3% 1%;
+  padding: 1rem 5rem 1rem 2rem;
   border-radius: 20px;
   width: auto;
 }
@@ -360,7 +359,31 @@ footer {
 
 /* Media query for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media only screen and (max-width: 767.98px) {
@@ -401,6 +424,15 @@ footer {
     all: unset;
     cursor: pointer;
     width: auto;
+  }
+
+  footer {
+    margin-top: 5em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .fas {
@@ -533,7 +565,7 @@ footer {
   }
 
   .renting-card {
-    width: 100vw;
+    width: 90vw;
     border: 5px solid #ffffff;
     border-radius: 20px;
     background: white;
