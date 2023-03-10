@@ -204,9 +204,6 @@ footer {
   cursor: pointer;
 }
 
-/* .filter-list-mobile {
- display: none;
-} */
 
 .info-logo {
   border: 1px solid #d9d9d9;
@@ -394,6 +391,7 @@ footer {
     gap: 100px;
     width: 100%;
     border-bottom: 1px solid #0000;
+    margin-bottom: 2em;
   }
 
   .booki-activities {
@@ -443,17 +441,12 @@ footer {
   }
 
   .filter-list {
-    display: unset;
-  }
-
-  .filter-list-mobile {
-    display: flex;
-    align-items: center;
-    max-width: auto;
-    justify-content: flex-start;
-    gap: 15%;
-    margin-bottom: 2em;
-  }
+    gap: 7em;
+    gap: 3em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    }
+  
 
   .filter {
     display: flex;
