@@ -16,7 +16,7 @@ body {
   max-width: 1440px;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -119,7 +119,7 @@ footer {
   font-weight: bold;
 }
 
-.btn-primary-mobile{
+.btn-primary-mobile {
   opacity: 0;
   background: #0165fb;
   padding: 1em;
@@ -176,7 +176,6 @@ footer {
   align-items: center;
 }
 
-
 .filters i {
   color: #0165fc;
   margin-left: 5%;
@@ -194,16 +193,16 @@ footer {
 }
 
 .filter {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   padding: 15px;
   border-radius: 25px;
   gap: 5px;
 }
 
-.filter:hover{
-  background: #DEEAFF;
+.filter:hover {
+  background: #deeaff;
   cursor: pointer;
-} 
+}
 
 .info-logo {
   border: 1px solid #d9d9d9;
@@ -355,10 +354,18 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media only screen and (max-width: 767.98px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
 
-  .booki-logo-mobile{
-    display: flex;
-    justify-content: center;
+  input {
+    all: unset;
+    border: 1px solid #f2f2f2;
+    font-weight: bold;
+    color: black;
+    position: relative;
   }
 
   nav {
@@ -367,11 +374,21 @@ footer {
     align-items: unset;
   }
 
+  form {
+    margin-top: 3em;
+  }
+
+  .booki-logo-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
   .booki-activities-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     cursor: pointer;
     gap: 100px;
+    width: 100%;
     border-bottom: 1px solid #0000;
   }
 
@@ -385,45 +402,32 @@ footer {
   .top-effect {
     border-top: unset;
   }
-  
+
   .top-effect:hover {
-    border-top: unset
+    border-top: unset;
   }
 
-  .top-effect {
+  .bottom-effect {
     border-bottom: 1px solid #0000;
   }
-  
-  .top-effect:hover {
+
+  .bottom-effect:hover {
     border-bottom: 1px solid blue;
   }
 
-  form{
-    margin-top: 3em;
-  }
-
-  .btn-primary{
+  .btn-primary {
     opacity: 0;
-
   }
-  button{
-  opacity: 0;
+  button {
+    opacity: 0;
   }
 
   .fas {
     padding: 16px;
   }
 
-  input {
-    all: unset;
-    border: 1px solid #f2f2f2;
-    font-weight: bold;
-    color: black;
-    position: relative;
-  }
-
   /* btn for mobile is ok but it's still moving everywhere, maybe a sticky position will fix it */
-  .btn-primary-mobile{
+  .btn-primary-mobile {
     opacity: 1;
     background: #0165fb;
     padding: 1em;
@@ -431,13 +435,33 @@ footer {
     border-radius: 12px;
     z-index: 1;
     position: absolute;
-    right: 64px;
+    right: 58%;
   }
 
   .filter-list {
-    flex-wrap: wrap;
+    display: unset;
   }
 
+  .filter-list-mobile {
+    display: flex;
+    align-items: center;
+    max-width: auto;
+    justify-content: flex-start;
+    gap: 15%;
+    margin-bottom: 2em;
+  }
+
+  .filter {
+    display: flex;
+    text-align: center;
+    padding: 1em 5em;
+  }
+
+  #booki-logo {
+    height: 30px;
+    width: 100px;
+    margin-top: 3em;
+  }
 }
 
 /* Media query for mobiles
