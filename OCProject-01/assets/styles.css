@@ -82,6 +82,11 @@ footer {
   align-items: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -204,7 +209,6 @@ footer {
   cursor: pointer;
 }
 
-
 .info-logo {
   border: 1px solid #d9d9d9;
   padding: 1px;
@@ -223,7 +227,7 @@ footer {
   background: #f2f2f2;
   padding: 3% 1% 3% 1%;
   border-radius: 20px;
-  width: 817px;
+  width: auto;
 }
 
 .rentings-and-popular {
@@ -355,6 +359,10 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media only screen and (max-width: 767.98px) {
+  html {
+    margin: 1em;
+  }
+
   body {
     margin-left: auto;
     margin-right: auto;
@@ -377,6 +385,17 @@ footer {
 
   form {
     margin-top: 3em;
+  }
+
+  article img {
+    object-fit: cover;
+  }
+
+  a {
+    all: unset;
+    cursor: pointer;
+    width: auto;
+    display: flex;
   }
 
   .booki-logo-mobile {
@@ -437,7 +456,7 @@ footer {
     border-radius: 12px;
     z-index: 1;
     position: absolute;
-    right: 58%;
+    right: 63%;
   }
 
   .filter-list {
@@ -445,13 +464,39 @@ footer {
     gap: 3em;
     margin-top: 1em;
     flex-wrap: wrap;
-    }
-  
+  }
 
   .filter {
     display: flex;
     text-align: center;
     padding: 1em 5em;
+  }
+
+  .rentings-and-popular {
+    justify-content: space-around;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .popular-card {
+    border: 5px solid white;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    width: fit-content;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  .popular-rentings {
+    background: #f2f2f2;
+    padding: 3% 3% 3% 1%;
+    border-radius: 20px;
+  }
+
+  .renting-row {
+    margin-bottom: 4%;
+    flex-direction: column;
   }
 
   #booki-logo {
