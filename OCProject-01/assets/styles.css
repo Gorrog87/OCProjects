@@ -185,6 +185,7 @@ footer {
   margin-left: 5%;
 }
 
+
 .filter-info {
   display: flex;
   align-items: center;
@@ -198,9 +199,11 @@ footer {
 
 .filter {
   border: 1px solid #d9d9d9;
-  padding: 15px;
   border-radius: 25px;
   gap: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .filter:hover {
@@ -546,7 +549,7 @@ footer {
   .filter {
     display: flex;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
   }
 
   .rentings-and-popular {
