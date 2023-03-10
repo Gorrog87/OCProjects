@@ -180,6 +180,15 @@ footer {
   align-items: center;
 }
 
+.filter {
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
 .filters i {
   color: #0165fc;
   margin-left: 5%;
@@ -197,14 +206,6 @@ footer {
   margin-top: 1em;
 }
 
-.filter {
-  border: 1px solid #d9d9d9;
-  border-radius: 25px;
-  gap: 5px;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-}
 
 .filter:hover {
   background: #deeaff;
