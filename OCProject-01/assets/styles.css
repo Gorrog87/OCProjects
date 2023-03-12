@@ -9,7 +9,7 @@
 /*                                                                 * */
 /* ***************************************************************** */
 
-/* --------------------- HTML section ------------- */
+/* ---------------------------------------------------------- HTML section --------------------------------------------------------- */
 
 html {
   font-family: "Raleway";
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  margin: 0 1rem 0 1rem;
+  margin: auto;
   max-width: 1440px;
 }
 
@@ -65,7 +65,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
-/* -------------------- Classes section ----------------- */
+/* ---------------------------------------------------- Classes section ----------------------------------------------------------- */
 
 .flex {
   display: flex;
@@ -137,10 +137,6 @@ footer {
   position: absolute;
   right: 64px;
 }
-
-/* .btn-primary-mobile {
- all: unset;
-} */
 
 .btn-primary-mobile .fas {
   display: none;
@@ -286,6 +282,10 @@ footer {
   border-radius: 20px;
 }
 
+.popular-cards {
+  flex-direction: column;
+}
+
 .popular-card {
   border: 5px solid white;
   background: white;
@@ -333,7 +333,7 @@ footer {
 .activity-card p {
   margin-left: 1rem;
 }
-/*  ----------  ID section  ----------------------- */
+/*  ---------------------------------------------------  ID section  ----------------------------------------------------------- */
 
 #booki-logo {
   height: 30px;
@@ -354,7 +354,7 @@ footer {
 .spacing-footer {
   margin-left: 15rem;
 }
-/* ----------------Media Queries ------------------ */
+/* --------------------------------------------------------Media Queries --------------------------------------------------------- */
 
 /* ******************************************************************************************************************** */
 /*          ||||||||||       ____       |||||||    ||           |||||||      |||||||||||                                */
@@ -365,7 +365,10 @@ footer {
 /* ******************************************************************************************************************** */
 
 /* Media query for tablets */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* -------------------------------------------------------- HTML section ------------------------------------------------------- */
+
   html {
     margin: 0 1rem 0 1rem;
   }
@@ -374,10 +377,19 @@ footer {
     margin: 0 1rem 0 1rem;
   }
 
+  footer {
+    margin-top: 5em;
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* ---------------------------------------------------- Classes section -------------------------------------------------------- */
+
   .rentings-and-popular {
-    /* justify-content: space-around; */
     margin-bottom: 5%;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: baseline;
   }
@@ -385,8 +397,8 @@ footer {
   .rentings {
     background: #f2f2f2;
     border-radius: 20px;
-    width: 113vw;
-}
+    width: auto;
+  }
 
   .rentings h4 {
     display: flex;
@@ -397,8 +409,7 @@ footer {
   .renting-row {
     margin-bottom: 1rem;
     display: flex;
-    padding: 1rem 4rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -418,19 +429,23 @@ footer {
 
   .popular-rentings {
     background: #f2f2f2;
-    width: 118vw;
+    width: auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-}
+  }
 
   .popular-cards {
     gap: 1rem;
+    display: flex;
+    flex-direction: row;
   }
 
   .popular-card img {
     max-width: 91.67px;
     max-height: 144px;
+    min-width: 85px;
+    min-height: 127px;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
   }
@@ -441,18 +456,37 @@ footer {
     padding-left: 2rem;
   }
 
+  .activity-cards {
+    display: flex;
+    border-radius: 20px;
+    gap: unset;
+    justify-content: center;
+  }
+
   .activity-card {
     box-shadow: 10px 10px 12px -19px #000000;
     border-radius: 20px;
+    margin: 5px;
   }
 
   .activity-card img {
     object-fit: cover;
+    max-height: 260px;
+    min-height: 260px;
+    max-width: 186px;
+    min-width: 173px;
   }
 
   .spacing-footer-md {
     margin-left: 5rem;
   }
+
+  /*  ---------------------------------------------------  ID section  ----------------------------------------------------------- */
+
+  /* #febrian-img {
+    height: unset;
+    object-fit: cover;
+  } */
 }
 
 /* ******************************************************************************************************************** */
@@ -465,6 +499,8 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media only screen and (max-width: 767.98px) {
+  /* ------------------------------------------------------------ HTML section ----------------------------------------------------- */
+
   html {
     margin: unset;
   }
@@ -516,6 +552,8 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
   }
+
+  /* ------------------------------------------------------ Classes section ------------------------------------------------------- */
 
   .activities {
     margin: 1rem;
@@ -643,7 +681,7 @@ footer {
 
   .popular-rentings {
     background: #f2f2f2;
-    padding: 3% 3% 3% 1%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -664,9 +702,14 @@ footer {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
 
+  .activities h4 {
+    padding-left: 1rem;
+  }
+
   .activity-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 1rem;
     border-radius: 20px;
   }
@@ -692,6 +735,8 @@ footer {
   .spacing-footer {
     margin-left: unset;
   }
+
+  /*  ---------------------------------------------------  ID section  --------------------------------------------------------- */
 
   #booki-logo {
     height: 30px;
