@@ -226,7 +226,7 @@ footer {
 
 .rentings {
   background: #f2f2f2;
-  padding: 1rem 5rem 1rem 2rem;
+  /* padding: 1rem 5rem 1rem 2rem; */
   border-radius: 20px;
   width: auto;
 }
@@ -241,13 +241,11 @@ footer {
 }
 
 .renting-card {
+  width: auto;
+  height: auto;
   border: 5px solid #ffffff;
   border-radius: 20px;
   background: white;
-  margin: 1%;
-  width: 246px;
-  height: 240px;
-  /* box-shadow: 8px 14px 14px -14px #000000; */
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -258,6 +256,7 @@ footer {
 .renting-card img {
   width: inherit;
   max-height: 124px;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
@@ -291,6 +290,7 @@ footer {
 .popular-card img {
   width: 137px;
   border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
 }
 
 .popular-card-stars {
@@ -301,12 +301,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   border-radius: 20px;
+  gap: 1rem;
 }
 
 .activity-card {
   box-shadow: 10px 10px 12px -19px #000000;
   border-radius: 20px;
-  margin: 0 1% 1% 1%;
 }
 
 .activity-card img {
@@ -345,6 +345,7 @@ footer {
 
 #febrian-img {
   height: 126px;
+  object-fit: cover;
 }
 
 .spacing-footer {
@@ -352,8 +353,13 @@ footer {
 }
 /* ----------------Media Queries ------------------ */
 
-@media only screen and(max-width: 1024px) {
-}
+/* ******************************************************************************************************************** */
+/*        |||||||||||||                                              */
+/*              ||                                       */
+/*              ||                                       */
+/*              ||                                         */
+/*              ||                  */
+/* ******************************************************************************************************************** */
 
 /* Media query for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -367,9 +373,7 @@ footer {
 
   .rentings {
     background: #f2f2f2;
-    /* padding: 1rem 5rem 1rem 2rem; */
     border-radius: 20px;
-    /* width: 93vw; */
   }
 
   .rentings h4 {
@@ -379,8 +383,9 @@ footer {
   }
 
   .renting-row {
-    margin-bottom: 4%;
+    margin-bottom: 1rem;
     display: flex;
+    padding: 1rem 4rem;
     justify-content: center;
     align-items: center;
   }
@@ -397,8 +402,6 @@ footer {
     margin: 2rem;
     border-radius: 20px;
     display: flex;
-    /* flex-direction: column; */
-    /* gap: 0rem; */
   }
 
   .afficher-plus a {
@@ -407,10 +410,31 @@ footer {
     padding-left: 2rem;
   }
 
+  .activity-card {
+    box-shadow: 10px 10px 12px -19px #000000;
+    border-radius: 20px;
+    /* max-width: 193.5px;
+    min-width: 100px;
+    max-height: 270px;
+    min-height: 70px; */
+  }
+
+  .activity-card img {
+    object-fit: cover;
+  }
+
   .spacing-footer-md {
     margin-left: 5rem;
   }
 }
+
+/* ******************************************************************************************************************** */
+/*                ||\\ // ||     |||||     |||||||     ||    ||        |||||||                                          */
+/*                ||\\  //||    |    |     ||   /      ||    ||        ||                                               */
+/*                ||      ||   |      |    ||  /       ||    ||        ||||                                             */
+/*                ||      ||    |    |     ||  \       ||    ||        ||                                               */
+/*                ||      ||     ||||      |||||||     ||    |||||||   |||||||                                          */
+/* ******************************************************************************************************************** */
 
 /* Small devices (phones, less than 768px) */
 @media only screen and (max-width: 767.98px) {
@@ -573,7 +597,8 @@ footer {
     background: white;
     border-radius: 20px;
     margin-bottom: 1em;
-    width: -webkit-fill-available;
+    width: 335px;
+    height: 144px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
 
@@ -583,22 +608,20 @@ footer {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    width: max-content;
   }
 
   .renting-row {
     flex-direction: column;
     align-items: center;
-    padding: -1rem;
+    gap: 1rem;
   }
 
   .renting-card {
-    width: 90vw;
+    width: 335px;
+    height: 237.25px;
     border: 5px solid #ffffff;
     border-radius: 20px;
     background: white;
-    margin: 1%;
-    /* box-shadow: 8px 14px 14px -14px #000000; */
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
 
@@ -609,8 +632,14 @@ footer {
     border-radius: 20px;
   }
 
+  .activity-card {
+    box-shadow: 10px 10px 12px -19px #000000;
+    border-radius: 20px;
+    width: 315px;
+    height: 200px;
+  }
+
   .activity-card img {
-    /* min-width: 100px; */
     max-width: 315px;
     max-height: 141px;
     min-height: 70px;
@@ -629,7 +658,3 @@ footer {
     margin-left: unset;
   }
 }
-
-/* Media query for mobiles
-  @media only screen and (max-width: 768px) {
-  } */
