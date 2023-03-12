@@ -380,12 +380,13 @@ footer {
     /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: baseline;
-}
+  }
 
   .rentings {
     background: #f2f2f2;
     border-radius: 20px;
-  }
+    width: 113vw;
+}
 
   .rentings h4 {
     display: flex;
@@ -399,7 +400,7 @@ footer {
     padding: 1rem 4rem;
     justify-content: center;
     align-items: center;
-}
+  }
 
   .renting-card img {
     max-width: 268px;
@@ -417,10 +418,21 @@ footer {
 
   .popular-rentings {
     background: #f2f2f2;
-    padding: 3% 1% 3% 1%;
-    margin: 2rem;
+    width: 118vw;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
+}
+
+  .popular-cards {
+    gap: 1rem;
+  }
+
+  .popular-card img {
+    max-width: 91.67px;
+    max-height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
   }
 
   .afficher-plus a {
