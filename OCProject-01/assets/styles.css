@@ -9,11 +9,14 @@
 /*                                                                 * */
 /* ***************************************************************** */
 
+/* Les min-width et max-width sont calculées par rapport à la largeur de l'écran moins les paddings ou margins existant sur l'élément ou l'élément parent */
+
 /* ---------------------------------------------------------- HTML section --------------------------------------------------------- */
 
 html {
   font-family: "Raleway";
-  margin: 0 1rem 0 1rem;
+  /* margin: 0 1rem 0 1rem; */
+  padding: 0 1rem 0 1rem;
 }
 
 body {
@@ -296,7 +299,8 @@ footer {
 }
 
 .popular-card-details {
-  margin-left: 5%;
+  /* margin-left: 5%; */
+  padding: 1rem;
 }
 
 .popular-card img {
@@ -370,12 +374,14 @@ footer {
   /* -------------------------------------------------------- HTML section ------------------------------------------------------- */
 
   html {
-    margin: 0 1rem 0 1rem;
-  }
+    /* margin: 0 1rem 0 1rem; */
+    padding: 0 1rem 0 1rem;
+}
 
   body {
-    margin: 0 1rem 0 1rem;
-  }
+    /* margin: 0 1rem 0 1rem; */
+    padding: 0 1rem 0 1rem;
+}
 
   footer {
     margin-top: 5em;
@@ -397,29 +403,36 @@ footer {
   .rentings {
     background: #f2f2f2;
     border-radius: 20px;
+    padding-right: unset;
     width: auto;
-  }
+    min-width: 768px;
+    max-width: 1024px;
+}
 
-  .rentings h4 {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 2rem;
-  }
+.rentings h4 {
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  padding-left: 2rem;
+  /* width: fit-content; */
+}
 
-  .renting-row {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.renting-row {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   .renting-card img {
-    max-width: 268px;
-    min-width: 220px;
-    max-height: 124px;
+    /* max-width: 268px; */
+    /* min-width: 220px; */
+    /* max-height: 124px; */
+    width: auto;
+    height: auto;
+    min-width: 203px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-  }
+}
 
   .rentings-and-popular {
     justify-content: space-around;
@@ -431,9 +444,11 @@ footer {
     background: #f2f2f2;
     width: auto;
     border-radius: 20px;
+    max-width: 1024px;
+    min-width: 768px;
     display: flex;
     flex-direction: column;
-  }
+}
 
   .popular-cards {
     gap: 1rem;
@@ -451,17 +466,20 @@ footer {
   }
 
   .afficher-plus a {
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex; */
+    /* justify-content: flex-start; */
     padding-left: 2rem;
-  }
+}
 
-  .activity-cards {
-    display: flex;
-    border-radius: 20px;
-    gap: unset;
-    justify-content: center;
-  }
+.activity-cards {
+  display: flex;
+  border-radius: 20px;
+  gap: unset;
+  width: auto;
+  min-width: 740px;
+  /* max-width: 889px; */
+  justify-content: center;
+}
 
   .activity-card {
     box-shadow: 10px 10px 12px -19px #000000;
@@ -483,10 +501,10 @@ footer {
 
   /*  ---------------------------------------------------  ID section  ----------------------------------------------------------- */
 
-  /* #febrian-img {
-    height: unset;
+  #febrian-img {
+    height: 144px;
     object-fit: cover;
-  } */
+}
 }
 
 /* ******************************************************************************************************************** */
@@ -546,7 +564,7 @@ footer {
   footer {
     margin-top: 3rem;
     gap: 1rem;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -572,7 +590,7 @@ footer {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    gap: 11rem;
+    /* gap: 11rem; */
     border-bottom: 1px solid #0000;
     margin-bottom: 2em;
   }
@@ -663,8 +681,10 @@ footer {
   }
 
   .renting-card img {
-    min-width: -webkit-fill-available;
+    /* min-width: -webkit-fill-available; */
     max-height: 124px;
+    min-width: 300px;
+    max-width: 425px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
   }
@@ -674,31 +694,61 @@ footer {
     background: white;
     border-radius: 20px;
     margin-bottom: 1em;
-    width: 335px;
-    height: 144px;
+    min-width: 288px;
+    width: auto;
+    max-width: 393px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  .popular-card-details {
+    /* margin-left: 5%; */
+    padding-left: 1rem;
+  }
+
+  .popular-card img {
+    min-width: 111px;
+    min-height: 144px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
   }
 
   .popular-rentings {
     background: #f2f2f2;
     padding: 1rem;
+    min-width: 288px;
     display: flex;
+    max-width: 393px;
     flex-direction: column;
     border-radius: 20px;
   }
 
   .renting-row {
+    /* max-width: 393px; */
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
+    width: fit-content;
+    /* min-width: 328px; */
   }
 
   .renting-card {
-    width: 335px;
+    /* width: 335px; */
+    min-width: 300px;
     height: 237.25px;
+    max-width: 425px;
     border: 5px solid #ffffff;
     border-radius: 20px;
     background: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+
+  .popular-card {
+    border: 5px solid white;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    /* width: 335px; */
+    /* height: 144px; */
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
 
@@ -709,7 +759,7 @@ footer {
   .activity-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1rem;
     border-radius: 20px;
   }
@@ -717,15 +767,17 @@ footer {
   .activity-card {
     box-shadow: 10px 10px 12px -19px #000000;
     border-radius: 20px;
-    width: 315px;
+    /* width: 315px; */
     height: 200px;
-    min-width: 345px;
+    /* min-width: 320px; */
   }
 
   .activity-card img {
-    max-width: 315px;
+    /* max-width: 315px; */
     max-height: 141px;
-    min-width: -webkit-fill-available;
+    /* min-width: 300px; */
+    min-width: 300px;
+    max-width: 425px;
     min-height: 70px;
     border-radius: 20px 20px 0 0;
     margin-bottom: 1%;
@@ -741,5 +793,9 @@ footer {
   #booki-logo {
     height: 30px;
     width: auto;
+  }
+  #febrian-img {
+    /* height: unset; */
+    object-fit: cover;
   }
 }
