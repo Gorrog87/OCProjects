@@ -19,12 +19,25 @@
 
 html {
   font-family: "Raleway";
-  padding: 0 1rem 0 1rem;
+  /* padding: 0 1rem 0 1rem; */
 }
 
 body {
-  margin: auto;
+  /* margin: auto; */
   max-width: 1440px;
+}
+
+section {
+  width: fit-content;
+}
+
+img {
+  min-height: 40px;
+  max-height: 80px;
+  min-width: 115px;
+  max-width: 40px;
+  width: fit-content;
+  height: fit-content;
 }
 
 nav {
@@ -263,8 +276,8 @@ footer {
 }
 
 .renting-card img {
-  min-width: 220px;
-  max-height: 124px;
+  /* min-width: 220px;
+  max-height: 124px; */
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -304,7 +317,7 @@ footer {
 }
 
 .popular-card img {
-  width: 137px;
+  /* width: 137px; */
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
 }
@@ -326,9 +339,9 @@ footer {
 }
 
 .activity-card img {
-  min-width: 302px;
+  /* min-width: 302px;
   max-width: 302px;
-  height: 365px;
+  height: 365px; */
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
@@ -355,7 +368,7 @@ footer {
 }
 
 #febrian-img {
-  height: 126px;
+  /* height: 126px; */
   object-fit: cover;
 }
 
@@ -382,11 +395,15 @@ footer {
   /* *********************************************************************************************************************************   */
 
   html {
-    padding: 0 1rem 0 1rem;
+    /* padding: 0 1rem 0 1rem; */
   }
 
   body {
-    padding: 0 1rem 0 1rem;
+    /* padding: 0 1rem 0 1rem; */
+  }
+
+  section {
+    width: fit-content;
   }
 
   footer {
@@ -430,10 +447,10 @@ footer {
   }
 
   .renting-card img {
-    width: auto;
+    /* width: auto;
     height: auto;
     min-width: 203px;
-    object-fit: cover;
+    object-fit: cover; */
     border-radius: 20px 20px 0 0;
   }
 
@@ -464,10 +481,10 @@ footer {
   }
 
   .popular-card img {
-    max-width: 91.67px;
+    /* max-width: 91.67px;
     max-height: 128px;
     min-width: 85px;
-    min-height: 127px;
+    min-height: 127px; */
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
   }
@@ -492,11 +509,11 @@ footer {
   }
 
   .activity-card img {
-    object-fit: cover;
+    /* object-fit: cover;
     max-height: 260px;
     min-height: 260px;
     max-width: 186px;
-    min-width: 173px;
+    min-width: 173px; */
   }
 
   .spacing-footer-md {
@@ -510,8 +527,8 @@ footer {
   /* ***************************************************************************************************************************** */
 
   #febrian-img {
-    height: 144px;
-    object-fit: cover;
+    /* height: 144px;
+    object-fit: cover; */
   }
 }
 
@@ -532,12 +549,16 @@ footer {
   /* *********************************************************************************************************************************** */
 
   html {
-    margin: unset;
+    /* margin: unset; */
   }
 
   body {
-    margin: unset;
+    /* margin: unset; */
     max-width: 1440px;
+  }
+
+  section {
+    width: fit-content;
   }
 
   input {
@@ -564,7 +585,7 @@ footer {
   }
 
   article img {
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 
   a {
@@ -701,10 +722,10 @@ footer {
   }
 
   .renting-card img {
-    max-height: 124px;
+    /* max-height: 124px;
     min-width: 261px;
     max-width: 425px;
-    object-fit: cover;
+    object-fit: cover; */
     border-radius: 20px 20px 0 0;
   }
 
@@ -724,8 +745,8 @@ footer {
   }
 
   .popular-card img {
-    min-width: 108px;
-    min-height: 144px;
+    /* min-width: 108px;
+    min-height: 144px; */
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
   }
@@ -735,7 +756,7 @@ footer {
     padding: 1rem;
     min-width: 288px;
     display: flex;
-    width: max-content;
+    /* width: max-content; */
     flex-direction: column;
     border-radius: 20px;
   }
@@ -762,7 +783,7 @@ footer {
     padding: 1rem;
     min-width: 288px;
     display: flex;
-    max-width: max-content;
+    /* max-width: max-content; */
     flex-direction: column;
     border-radius: 20px;
 }
@@ -786,10 +807,10 @@ footer {
   }
 
   .activity-card img {
-    max-height: 141px;
+    /* max-height: 141px;
     min-width: 300px;
     max-width: 425px;
-    min-height: 70px;
+    min-height: 70px; */
     border-radius: 20px 20px 0 0;
     object-fit: cover;
   }
@@ -809,6 +830,6 @@ footer {
     width: auto;
   }
   #febrian-img {
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
