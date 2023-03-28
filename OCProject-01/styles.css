@@ -708,13 +708,14 @@ footer {
   .renting-img {
     max-width: 380px;
     max-height: 124px;
-  }
+    min-width: 382px;
+}
 
-  .activity-img {
-    max-width: 327px;
-    max-height: 141px;
-    min-width: 309px;
-    min-height: 155px;
+.activity-img {
+  max-width: 327px;
+  max-height: 141px;
+  min-width: 316px;
+  min-height: 155px;
 }
 
   .popular-rentings {
