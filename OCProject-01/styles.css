@@ -339,10 +339,9 @@ footer {
 }
 
 .activity-card {
-  box-shadow: 10px 10px 12px -19px #000000;
+  box-shadow: 5px 10px 6px -12px #000000;
   border-radius: 20px;
 }
-
 
 .activity-card p {
   margin-left: 1rem;
@@ -428,7 +427,7 @@ footer {
   }
 
   .popular-img {
-    max-height: 146px;
+    max-height: 159px;
     max-width: 91px;
   }
 
@@ -478,7 +477,7 @@ footer {
   }
 
   .activity-card {
-    box-shadow: 10px 10px 12px -19px #000000;
+    box-shadow: 5px 10px 6px -12px #000000;
     border-radius: 20px;
     margin: 5px;
   }
@@ -546,6 +545,7 @@ footer {
 
   footer {
     margin-top: 3rem;
+    padding: 2rem 0 0 2rem;
     gap: 1rem;
     display: flex;
     flex-direction: column;
@@ -659,8 +659,7 @@ footer {
 
   .rentings-and-popular {
     justify-content: space-around;
-    margin: 1rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column-reverse;
   }
 
@@ -706,21 +705,23 @@ footer {
   }
 
   .renting-img {
-    max-width: 380px;
+    max-width: 410px;
     max-height: 124px;
-    min-width: 382px;
+    min-width: 310px;
+    width: -webkit-fill-available;
 }
 
 .activity-img {
   max-width: 327px;
   max-height: 141px;
   min-width: 316px;
+  width: -webkit-fill-available;
   min-height: 155px;
 }
 
   .popular-rentings {
     background: #f2f2f2;
-    padding: 1rem;
+    /* padding: 1rem; */
     min-width: 288px;
     display: flex;
     flex-direction: column;
@@ -735,6 +736,7 @@ footer {
   .renting-card {
     border: 5px solid #ffffff;
     border-radius: 20px;
+    /* width: fit-content; */
     background: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
@@ -748,7 +750,7 @@ footer {
   }
 
   .activity-card {
-    box-shadow: 10px 10px 12px -19px #000000;
+    box-shadow: 5px 10px 6px -12px #000000;
     border-radius: 20px;
     height: 200px;
   }
