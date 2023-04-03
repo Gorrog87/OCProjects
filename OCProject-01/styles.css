@@ -404,6 +404,15 @@ footer {
     flex-direction: column;
   }
 
+  .btn-primary {
+    color: #ffff;
+    background: #0165fc;
+    padding: 0 10px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
   .rentings {
     background: #f2f2f2;
     border-radius: 20px;
@@ -605,6 +614,7 @@ footer {
 
   .btn-primary {
     opacity: 0;
+    display: none;
   }
   button {
     opacity: 0;
